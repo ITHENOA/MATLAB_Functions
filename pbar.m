@@ -9,7 +9,7 @@ arguments
     opt.MaxHashtag {mustBeInteger,mustBePositive} = 20 % to represent '100%'
     opt.CustomProgressLine {mustBeTextScalar} = '#'
     opt.Info {mustBeTextScalar} = ''
-    opt.startTime = [] 
+    opt.startTime = [] % matlab datetime
 end
 
 if rem(currentStep,opt.EveryStepShow) == 0 || currentStep == lastStep % update rate
